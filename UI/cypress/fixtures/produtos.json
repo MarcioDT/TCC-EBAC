@@ -1,0 +1,20 @@
+[
+    {
+        "nomeProduto": "Ingrid Running Jacket",
+        "tamanho": "L",
+        "cor":"White",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto": "Aero Daily Fitness Tee",
+        "tamanho": "L",
+        "cor":"Yellow",
+        "quantidade": 2
+    },
+    {
+        "nomeProduto": "Cronus Yoga Pant",
+        "tamanho": "34",
+        "cor":"Black",
+        "quantidade": 3
+    }
+]
