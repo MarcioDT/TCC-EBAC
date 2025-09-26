@@ -2,12 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Dependencias') {
+        stage('Instal') {
             steps {
                 bat 'npm install'
             }
         }
-        stage('Testes') {
+        stage('Test') {
             steps {
                 bat 'npm run cy:run'
             }
