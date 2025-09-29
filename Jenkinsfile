@@ -2,16 +2,22 @@ pipeline {
     agent any
 
     stages {
-        stage('Instal') {
+        stage('Clone') {
             steps {
-                git branch: 'master', url: 'https://github.com/MarcioDT/TCC-EBAC.git'
-                bat 'npm install'
+                git branch: 'master', url: 'https://github.com/MarcioDT/TCC-EBAC.git'               
             }
         }
-        stage('Test') {
+        stage('Dependencias') {
             steps {
-                bat 'npm run cy:run'
+               bat 'npm install'
+            }
+        }        
+        stage('Teste') {
+            steps {
+                bat '''set NO_COLOR=1
+                npx cypress run'''              
             }
         }
+
     }
 }
